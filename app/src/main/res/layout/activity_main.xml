@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scale"
+    >
+
+  <TextView
+      android:id="@+id/tv"
+      android:gravity="center"
+      android:layout_width="@dimen/circle_radiu"
+      android:layout_height="@dimen/circle_radiu"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+      android:text="Hello World!"
+      android:textSize="28dp"
+      android:background="@drawable/transition"
+      />
+  <Button
+      android:id="@+id/btn"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hello Button"
+      android:textSize="36dp"
+      android:textColor="#aa00bb"
+      android:background="@drawable/state"
+      />
+
+  <demos.ch.com.drawabledemo.CirclePic
+      android:layout_width="@dimen/circle_radiu"
+      android:layout_height="@dimen/circle_radiu"
+      app:radiu="@dimen/circle_radiu"
+      android:src="@mipmap/g"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:id="@+id/circlePic"
+      />
+</RelativeLayout>
